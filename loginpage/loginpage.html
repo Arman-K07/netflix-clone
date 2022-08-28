@@ -1,221 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../-116216879983nwgrq28sk.png" />
-    <title>Netflix</title>
-    <style>
-      body {
-        background-image: url(../netflix-banner.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
 
-      .darker {
-        background: rgba(0, 0, 0, 0.6);
-        height: max-content;
-      }
-      nav img {
-        width: 10.3rem;
-        margin-top: 4px;
-        padding-left: 35px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/logo.png" />
+  <title>Netflix</title>
+  <style>
+    body {
+      background-image: url("../assets/netflix-banner.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      a {
-        text-decoration: none;
-      }
+    .darker {
+      background: rgba(0, 0, 0, 0.6);
+      height: max-content;
+    }
+
+    nav img {
+      width: 10.3rem;
+      margin-top: 4px;
+      padding-left: 35px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #login {
+      padding: 0px 475px;
+    }
+
+    .login-box {
+      background-color: rgba(0, 0, 0, 0.788);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+
+    .login-box h1 {
+      color: white;
+      margin-left: 50px;
+    }
+
+    #ean {
+      padding: 15px;
+      margin-bottom: 15px;
+      width: 250px;
+      border-radius: 5px;
+      background-color: rgb(70, 70, 70);
+      color: rgb(150, 150, 150);
+      border: 0;
+      margin-left: 50px;
+    }
+
+    #pass {
+      padding: 15px;
+      margin-bottom: 15px;
+      width: 250px;
+      border-radius: 5px;
+      background-color: rgb(70, 70, 70);
+      color: rgb(150, 150, 150);
+      border: 0;
+      margin-left: 50px;
+    }
+
+    #btn {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      border: 0;
+      margin-left: 50px;
+      cursor: pointer;
+      /*margin-bottom: 80px; */
+    }
+
+    .marknhelp {
+      margin-top: 8px;
+      margin-left: 50px;
+      margin-right: 70px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+    }
+
+    .n {
+      margin-bottom: 15px;
+      margin-left: 50px;
+      color: rgb(150, 150, 150);
+    }
+
+    .n a {
+      color: white;
+    }
+
+    .m {
+      margin-bottom: 100px;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 13px;
+      color: rgb(150, 150, 150);
+    }
+
+    .m a {
+      color: rgb(37, 105, 253);
+    }
+
+    .bottom {
+      background-color: rgba(0, 0, 0, 0.788);
+      color: rgb(150, 150, 150);
+      margin-top: 80px;
+    }
+
+    .numbers a {
+      color: rgb(150, 150, 150);
+    }
+
+    .numbers {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px 63px;
+    }
+
+    .number {
+      padding: 10px 160px;
+    }
+
+    .hlp a {
+      color: rgb(150, 150, 150);
+    }
+
+    @media screen and (max-width: 769px) {
       #login {
-        padding: 0px 475px;
-      }
-      .login-box {
-        background-color: rgba(0, 0, 0, 0.788);
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-      }
-      .login-box h1 {
-        color: white;
-        margin-left: 50px;
-      }
-      #ean {
-        padding: 15px;
-        margin-bottom: 15px;
-        width: 250px;
-        border-radius: 5px;
-        background-color: rgb(70, 70, 70);
-        color: rgb(150, 150, 150);
-        border: 0;
-        margin-left: 50px;
-      }
-
-      #pass {
-        padding: 15px;
-        margin-bottom: 15px;
-        width: 250px;
-        border-radius: 5px;
-        background-color: rgb(70, 70, 70);
-        color: rgb(150, 150, 150);
-        border: 0;
-        margin-left: 50px;
-      }
-
-      #btn {
-        background-color: red;
-        color: white;
-        padding: 20px;
-        width: 280px;
-        border-radius: 5px;
-        margin-top: 15px;
-        font-size: 15px;
-        font-weight: bold;
-        border: 0;
-        margin-left: 50px;
-        cursor: pointer;
-        /*margin-bottom: 80px; */
+        padding: 10px 200px;
       }
 
       .marknhelp {
-        margin-top: 8px;
-        margin-left: 50px;
-        margin-right: 70px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 80px;
+        margin-right: 36px;
+      }
+    }
+
+    @media screen and (max-width: 376px) {
+      body {
+        background-image: none;
+        background-color: black;
       }
 
-      .n {
-        margin-bottom: 15px;
-        margin-left: 50px;
-        color: rgb(150, 150, 150);
-      }
-      .n a {
-        color: white;
-      }
-      .m {
-        margin-bottom: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        font-size: 13px;
-        color: rgb(150, 150, 150);
+      #login {
+        padding: 0;
+        border-bottom: 1px solid gray;
       }
 
-      .m a {
-        color: rgb(37, 105, 253);
+      .marknhelp {
+        margin-right: 44px;
+      }
+
+      .darker {
+        background: black;
       }
 
       .bottom {
-        background-color: rgba(0, 0, 0, 0.788);
-        color: rgb(150, 150, 150);
-        margin-top: 80px;
-      }
-
-      .numbers a {
-        color: rgb(150, 150, 150);
-      }
-
-      .numbers {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px 63px;
+        margin: 10px;
       }
 
       .number {
-        padding: 10px 160px;
+        padding: 0;
       }
 
-      .hlp a {
-        color: rgb(150, 150, 150);
+      .numbers {
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
       }
 
-      @media screen and (max-width: 769px) {
-        #login {
-          padding: 10px 200px;
-        }
-        .marknhelp {
-          margin-right: 36px;
-        }
+      .numbers a {
+        padding: 5px;
       }
+    }
+  </style>
+</head>
 
-      @media screen and (max-width: 376px) {
-        body {
-          background-image: none;
-          background-color: black;
-        }
-        #login {
-          padding: 0;
-          border-bottom: 1px solid gray;
-        }
-        .marknhelp {
-          margin-right: 44px;
-        }
-        .darker {
-          background: black;
-        }
-        .bottom {
-          margin: 10px;
-        }
-        .number {
-          padding: 0;
-        }
-        .numbers {
-          padding: 0;
-          flex-direction: column;
-          text-align: center;
-          padding-bottom: 10px;
-        }
-        .numbers a {
-          padding: 5px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="darker">
-      <nav>
-        <img src="../netflix-logo.png" alt="" />
-      </nav>
-      <div id="login">
-        <div class="login-box">
-          <h1>Sign In</h1>
-          <input type="email" placeholder="Email or phone number" id="ean" />
-          <input type="password" placeholder="Password" id="pass" />
-          <input type="button" value="Sign In" id="btn" />
-          <div class="marknhelp">
-            <label><input type="checkbox" /><span>Remember me</span></label>
-            <div class="hlp"><a href=".">Need help?</a></div>
-          </div>
+<body>
+  <div class="darker">
+    <nav>
+      <img src="../netflix-logo.png" alt="" />
+    </nav>
+    <div id="login">
+      <div class="login-box">
+        <h1>Sign In</h1>
+        <input type="email" placeholder="Email or phone number" id="ean" />
+        <input type="password" placeholder="Password" id="pass" />
+        <input type="button" value="Sign In" id="btn" />
+        <div class="marknhelp">
+          <label><input type="checkbox" /><span>Remember me</span></label>
+          <div class="hlp"><a href=".">Need help?</a></div>
+        </div>
 
-          <div class="n">
-            <span>New to Netflix?</span>
-            <span><a href="."> Sign up now</a></span>
-          </div>
-          <div class="m">
-            <span
-              >This page is protected by Google reCAPTCHA to ensure you're not a
-              bot.</span
-            ><span><a href="."> Learn more.</a></span>
-          </div>
+        <div class="n">
+          <span>New to Netflix?</span>
+          <span><a href="."> Sign up now</a></span>
+        </div>
+        <div class="m">
+          <span>This page is protected by Google reCAPTCHA to ensure you're not a
+            bot.</span><span><a href="."> Learn more.</a></span>
         </div>
       </div>
-      <footer class="bottom">
-        <div class="number">
-          <p>Questions? Call 000-800-040-1843</p>
-        </div>
-        <div class="numbers">
-          <a href="." class="1">FAQ</a>
-          <a href="." class="2">Help Centre</a>
-          <a href="." class="3">Terms of use</a>
-          <a href="." class="4">Privacy</a>
-          <a href="." class="5">Cookie Preferences</a>
-          <a href="." class="6">Corporate Information</a>
-        </div>
-      </footer>
     </div>
-  </body>
+    <footer class="bottom">
+      <div class="number">
+        <p>Questions? Call 000-800-040-1843</p>
+      </div>
+      <div class="numbers">
+        <a href="." class="1">FAQ</a>
+        <a href="." class="2">Help Centre</a>
+        <a href="." class="3">Terms of use</a>
+        <a href="." class="4">Privacy</a>
+        <a href="." class="5">Cookie Preferences</a>
+        <a href="." class="6">Corporate Information</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
