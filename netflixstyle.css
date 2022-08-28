@@ -8,7 +8,7 @@ body {
 
 .banner {
   background-image: url("./assets/netflix-banner.jpeg");
-
+  background-size: cover;
   background-repeat: no-repeat;
   max-height: 100vh;
   transform: none;
