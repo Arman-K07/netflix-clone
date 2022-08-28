@@ -495,3 +495,89 @@ footer p {
     column-gap: 23px;
   }
 }
+
+@media screen and (max-width: 321px) {
+  .navi {
+    margin: 0;
+  }
+  .navi img {
+    width: 7rem;
+  }
+  .first-page h1 {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .first-page p {
+    font-size: 14px;
+  }
+
+  .enjoy h1 {
+    font-size: 25px;
+  }
+  .enjoy p {
+    font-size: 14px;
+  }
+
+  .w1 h1 {
+    font-size: 25px;
+  }
+  .w1 p {
+    font-size: 14px;
+  }
+
+  .apple h1 {
+    font-size: 25px;
+  }
+  .apple p {
+    font-size: 14px;
+  }
+
+  .kids h1 {
+    font-size: 25px;
+  }
+  .kids p {
+    font-size: 14px;
+  }
+
+  .email-btn input {
+    width: 280px;
+  }
+  .frame .tv-frame {
+    width: 300px;
+  }
+  .frame video {
+    width: 215px;
+    top: 47px;
+    left: 42px;
+  }
+  .main-poster {
+    width: 310px;
+    padding: 0;
+  }
+  .down-poster {
+    left: 0;
+  }
+  .sho img {
+    width: 300px;
+    padding: 0;
+    margin: auto;
+  }
+  .applevid {
+    top: 44%;
+    left: 20%;
+    width: 190px;
+  }
+  #kid {
+    padding: 0;
+  }
+  #kid img {
+    width: 300px;
+  }
+  .kids {
+    margin: 20px;
+  }
+  footer {
+    padding: 0;
+    margin-left: 10px;
+  }
+}
