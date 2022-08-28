@@ -246,9 +246,8 @@ body {
 .applevid {
   position: absolute;
   width: 270px;
-  top: 71px;
-  left: 53.15%;
-  padding-left: 100px;
+  top: 16%;
+  left: 60%;
   z-index: -1;
 }
 
@@ -393,7 +392,7 @@ footer p {
   }
   .applevid {
     top: 46%;
-    left: 19.15%;
+    left: 31.15%;
   }
   #kid {
     flex-direction: column;
